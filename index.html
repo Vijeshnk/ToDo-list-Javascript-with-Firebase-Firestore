@@ -11,6 +11,11 @@
 
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+
+
              
     <title>Document</title>
 </head>
@@ -50,6 +55,18 @@
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems);
   });
-    </script>
+    
+  var firebaseConfig = {
+    apiKey: "AIzaSyAE7DVB4zPA9ZtD3uC-7SvjiExiM8WgWSA",
+    authDomain: "todolist-5840a.firebaseapp.com",
+    databaseURL: "https://todolist-5840a.firebaseio.com",
+    projectId: "todolist-5840a",
+    storageBucket: "todolist-5840a.appspot.com",
+    messagingSenderId: "337265251873",
+    appId: "1:337265251873:web:f4bb51aa504c3bf1b8f560"
+  };
+ 
+  firebase.initializeApp(firebaseConfig);
+</script>
 </body>
 </html>
